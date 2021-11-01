@@ -65,7 +65,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="banner-button">Заказать услугу</button>
+          <button type="button" class="banner-button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section">
@@ -120,6 +120,7 @@
               плановых заданий.
             </p>
             </li>
+          </ul>
         </div>
       </section>
       <section class="features-image">
@@ -507,5 +508,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-icon-close" data-modal-close>
+        <svg width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+        </svg>
+      </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
